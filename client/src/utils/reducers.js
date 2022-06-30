@@ -1,3 +1,5 @@
+import { useReducer } from 'react';
+
 import {
   UPDATE_PRODUCTS,
   UPDATE_CATEGORIES,
@@ -10,7 +12,6 @@ import {
   TOGGLE_CART
 } from './actions';
 
-import { startTransition, useReducer } from 'react';
 
 export const reducer = (state, action) => {
   switch (action.type) {
