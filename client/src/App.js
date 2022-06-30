@@ -43,7 +43,7 @@ function App() {
         <div>
           <StoreProvider>
             <Nav />
-            <Route>
+            <Routes>
               <Route 
                 path="/" 
                 element={<Home />} 
@@ -68,7 +68,7 @@ function App() {
                 path="*" 
                 element={<NoMatch />} 
               />
-            </Route>
+            </Routes>
           </StoreProvider>
         </div>
       </Router>
